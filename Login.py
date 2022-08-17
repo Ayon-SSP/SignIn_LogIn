@@ -29,16 +29,6 @@ def getvalue():
     insert_value = (name,pwd)
     cur.execute(insert_script,insert_value)
     conn.commit()
-        
-    
-    
-    # insert_value = (name,pwd)
-    # insert_value = ('AYON','passpass')
-    # try:
-    # cur = db.conn.cursor()
-    # cur.execute(db.insert_script,insert_value)
-    # cur.close()
-    # db.conn.close()
     
     return render_template('pass.html', n=name, p=pwd)
 
